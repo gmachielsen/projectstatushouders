@@ -1,0 +1,85 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Actief Breda</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/custom2.css" rel="stylesheet">
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                   <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                         <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="#">Agenda</a>
+                      </li>
+                      <li class="nav-item">
+                         <a class="nav-link" href="#">Jobs</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="werkgevers.html">Werkgevers</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="statushouders.html">Statushouders</a>
+                       </li>   
+                       <li class="nav-item">
+                          <a class="nav-link" href="activiteiten.html">Activiteiten</a>
+                        </li>   
+                        <li class="nav-item">
+                          <a class="nav-link" href="bedrijven.html">Participerende bedrijven</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>  
+                    </ul>
+                    </div>
+        </nav> 
+        <div class="top-foto"> <img src="img/div-mensen.jpg"/> </div>
+        <div class="maintext" >      
+        <p>Welkom bij Actief Breda
+        Wij zijn een plaatselijke organisatie en werken samen met een aantal bedrijven in Breda.
+        Zo bieden we jou de mogelijkheid om mee te doen aan verschillende activiteiten in de buurt. 
+        Om vrijwilligerswerk te doen, stage te lopen of een baan te vinden. 
+       Vind je het leuk om te sporten of te dansen, werk je liever met dieren of vind je het leuk om
+       mensen met een beperking te begeleiden dan kun je <a href="activiteiten.html">hier</a> zien wat voor activiteiten 
+        we in de aanbieding hebben 
+       Sommige Bredase bedrijven hebben ook vacatures of stageplaatsen. Deze vind je bij de participerende bedrijven
+         <a href="bedrijven.html">Werkgevers</a>.
+         Actuele jobs en stages vind je op <a href="advertentiepagina.html">Jobs</a> 
+         Heb je interesse vul dan je naam en telefoonnummer in en dan nemen wij contact met je op.</p>
+
+      <form id="form" action="/process-form.php" method="POST">
+        <div id="user_name">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="user_name" />
+            <span class="error">Voer uw naam in</span>
+        </div>
+        <div id="user_mail">
+            <label for="mail">E-mailadres:</label>
+            <input type="email" id="mail" name="user_mail" />
+            <span class="error">Voer een correct e-mail adres in</span>
+        </div>
+        <div id="user_message">
+            <label for="msg">Bericht:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit">Verstuur</button>
+        </div>
+        </form>
+        </div>
+<script src="../javascript/form_validation.js"></script>
+</body>
+</html>

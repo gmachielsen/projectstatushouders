@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/contact.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!-- Opmaak CSS voor de nav -->
+        <ul class="navbar-nav ">
+            <!-- Opmaak CSS voor de menu items -->
+            <li>
+                <a class="nav-link" href="index.html">Home</a>
+                <!-- nav-link= css opmaak van de link items -->
+            </li>
+            <li>
+                <a class="nav-link" href="#">Agenda</a>
+            </li>
+            <li>
+                <a class="nav-link" href="advertentiepagina.html">Jobs</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">Werkgevers</a>
+            </li>
+            <li>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <!-- Opmaak CSS voor de menu items -->
+            <li>
+               <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+            </li>
+            <li>
+                <a class="nav-link" href="register.html">registreren</a>
+            </li>
+
+        </ul>
+    </nav>
+
+   <section id="contact">
+       <div class="row">
+           <div class="col-4 col-offset-4">
+					<div class="content">
+						<div id="form">
+						  
+							<form id="contactForm" method="post">
+							    
+								<span>Name</span>
+								<input type="text" name="name" class="name " placeholder="Enter your name" tabindex=1 />
+								<span>Email</span>
+								<input type="text" name="email" class="email fal fa-phone" placeholder="Enter your email" tabindex=2 />
+								<span>Telefoonnummer</span>
+								<input type="text" name="phone" class="email" placeholder="Enter your phonenumber" tabindex=3 />
+							
+								<span>Message</span>
+								<textarea class="message" placeholder="Enter your message" tabindex=4></textarea>
+								<input type="submit" name="submit" value="Send e-mail" class="submit" tabindex=5>
+							
+							</form>
+						</div>
+						</div>
+		    </div>
+		    </div>
+   </section>
+  
+   		<script src="../javascript/contact.js"></script>
+</body>
+</html>

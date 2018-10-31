@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Actief Breda</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS code bootstrap -->
+    <link href="../css/custom.css" rel="stylesheet">
+    <!-- Aanpassingen aan CSS code bootsptrap -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <!-- Link naar font bestand -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!-- Opmaak CSS voor de nav -->
+        <ul class="navbar-nav ">
+            <!-- Opmaak CSS voor de menu items -->
+            <li>
+                <a class="nav-link" href="index.html">Home</a>
+                <!-- nav-link= css opmaak van de link items -->
+            </li>
+            <li>
+                <a class="nav-link" href="agenda.html">Agenda</a>
+            </li>
+            <li>
+                <a class="nav-link" href="advertentiepagina.html">Jobs</a>
+            </li>
+            <li>
+                <a class="nav-link" href="werkgevers.html">Werkgevers</a>
+            </li>
+            <li>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <!-- Opmaak CSS voor de menu items -->
+            <li>
+               <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+            </li>
+            <li>
+                <a class="nav-link" href="register.html">registreren</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="header-image">
+        <img name="slide" width="100%" height="100%" />
+        <div class="header-text">
+            <h1 style="font-size:60px;color:#007bff;">Welkom bij Actief Breda</h1>
+            <p style="font-size:20px;font-style:italic;color:#007bff;">Wij zetten ons in om statushouders te betrekken in de Bredase samenleving. </p>
+            <a href="#" class="btn btn-primary btn-lg">Agenda</a>
+            <a href="#" class="btn btn-primary btn-lg">Jobs</a>
+        </div>
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var i = 0; // Begin punt
+        var images = []; // image array
+        var time = 6000; // Tijd tussen plaatjes 6000 milliseconden = 6 seconden
+
+        // Image Lijst
+        images[0] = "../images/header-image.jpg";
+        images[1] = "../images/header-image1.jpg";
+        images[2] = "../images/header-image2.jpg";
+
+        // Verander plaatje
+        function changeImg() {
+            document.slide.src = images[i];
+
+
+            if (i < images.length - 1) {
+
+                i++;
+            }
+            else {
+
+                i = 0;
+            }
+
+
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+    </script>
+</body>
+
+</html>

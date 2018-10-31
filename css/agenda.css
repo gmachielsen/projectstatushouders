@@ -1,0 +1,39 @@
+h4 {
+    font-style: italic;
+}
+
+img {
+    width: 400px; 
+    height: auto; 
+    float: left; /*plaatst image aan de linkerkant*/
+    margin-right: 20px; /*Ruimte tussen image en tekst*/
+}
+
+.button-agenda {
+    float: right;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+}
+
+.button-agenda:hover {
+    color: black; /*Muis over button verandert kleur.*/
+}
+
+.flex-container-agenda {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap; /*Zet alle items onder elkaar*/
+}
+
+.flex-container-agenda >div {
+    width: 100%; /*verdeelt alle items over de gehele breedte van de pagina.*/
+    margin: 2%; /*Plaatst tussen de container en items margin toe */
+    padding: 5px; /*Plaatst tussen de items en tekst ruimte toe*/
+    background-color: #edeae6;
+}
+
+.flex-container-agenda >div:hover {
+   border: 1px solid #007bff; /*Curser over item. Plaatst een border van 1px op rand item (div) */
+}

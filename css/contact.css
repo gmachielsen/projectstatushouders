@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+#form {
+    padding-top: 55%;
+    padding-left: 25%;
+}
+.col-offset-4{
+margin-left:33%;
+}
+/*body {*/
+/*    padding-top: 0rem;*/
+/*    font-family: 'Oswald', sans-serif;*/
+/*}*/
+
+/*nav achtergrondkleur*/
+.bg-dark {
+    background-color: #007bff!important;
+}
+
+/*Zorgt dat navbar boven aan pagina blijft.*/
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+/*Header*/
+.header-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 55px;
+    opacity: 0.8;
+}
+
+.header-text {
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0  
+}
+body {
+  /*background-image: url(header-image.jpg);*/
+  /*height: 120vh;*/
+  /*background-size: cover;*/
+  color: #B1B1B1;
+  margin: 15px auto 0;
+  width: 410px;
+}
+#contact {
+  overflow: auto;
+}
+#contact #form {
+  width:410px;
+  float:left;
+}
+#contact #form h2 {
+  font: 48px 'Bree Serif', Georgia, serif;
+}
+#contact #form span {
+  display:block;
+  float:left;
+  width:100px;
+  padding-top:5px;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+#contact #form input {
+  float:left;
+  width:255px;
+  border:0px;
+  color:#F1F1F1;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  margin-bottom:10px;
+}
+#contact #form textarea {
+  float:left;
+  border:0px;
+  width:255px;
+  height:140px;
+  padding:10px 10px 10px 30px;
+  font: 11px/20px'Open Sans', Verdana, Helvetica, sans-serif;
+  color:#F1F1F1;
+  resize: none;
+}
+#contact #form input.name {
+  background:#222222  10px 8px;
+}
+#contact #form input.email {
+  background:#222222  10px 9px;
+}
+#contact #form input.phone {
+  background:#222222  10px 9px;
+}
+#contact #form input.captcha {
+  background:#222222 10px 9px;
+}
+#contact #form textarea.message {
+  background:#222222 10px 8px;
+}
+#contact #form input.submit {
+  cursor: pointer;
+  width:85px;
+  height:30px;
+  float:right;
+  padding:0px 0px 5px 0px;
+  margin:10px 16px 0px 0px;
+  background:#222222;
+  color:#F1F1F1;
+  font: 14px/16px'Bree Serif', Georgia, serif;
+}
+#contact #captcha span{
+  width: 44px;
+}
+#contact #captcha input{
+  background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
+  margin: 5px 0 0;
+  padding: 0;
+  border: medium none;
+  cursor: pointer;
+  width: 15px;
+}
